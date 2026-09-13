@@ -23,7 +23,13 @@
 
 		history.replaceState(null, "", url);
 	});
+
+	import favicon from "./favicon.png";
 </script>
+
+<svelte:head>
+	<link rel="icon" type="image/png" sizes="16x16" href={favicon} />
+</svelte:head>
 
 <main>
 	<h1>Césures</h1>
