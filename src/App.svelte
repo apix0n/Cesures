@@ -36,11 +36,7 @@
 
 	<p>
 		Prend un texte français en entrée et indique là où les césures
-		(coupures) du mot devraient se placer. {#if window.location.protocol !== "file:"}
-			<a href="./index.html" download="Césures.html"
-				>Télécharger cette application pour utilisation locale.</a
-			>
-		{/if}
+		(coupures) du mot devraient se placer.
 	</p>
 
 	<textarea bind:value={input} placeholder="Écrivez votre texte..." rows={5}
@@ -73,15 +69,6 @@
 		main {
 			margin: 60px auto;
 			padding: 0 10px;
-		}
-	}
-
-	a[download] {
-		color: inherit;
-		font-weight: 600;
-		text-decoration: none;
-		&:hover {
-			text-decoration: underline;
 		}
 	}
 
